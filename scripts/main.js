@@ -1,9 +1,15 @@
 //digital clock!!
 function showTime(){
     var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var s = date.getSeconds(); // 0 - 59
+    var h = date.getHours();
+    var m = date.getMinutes();
+    var s = date.getSeconds();
+	
+	var day =  date.getDate();
+	//I did this because for some reason the month said february, while it is march. Maybe this is because in js the months start from 0. SO zero being January
+	var month = date.getMonth() + 1; 
+	var year = date.getFullYear();
+	
     var session = "AM";
     
     if(h == 0){
@@ -20,8 +26,12 @@ function showTime(){
     s = (s < 10) ? "0" + s : s;
     
     var time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").textContent = time;
+    document.getElementById("clockDisplay").innerText = time;
+    document.getElementById("clockDisplay").textContent = time;
+	
+	var date = day + "-" + month + "-" + year;
+	document.getElementById("dateDisplay").innertext = date;
+	document.getElementById("dateDisplay").textContent = date;
     
     setTimeout(showTime, 1000);
     
@@ -36,7 +46,7 @@ function backgroundColor() {
 	  //if the current time is smaller than/equal to zero and if the current time is less than 5 then show the colorset for the night. 
       if (0 <= currentTime&&currentTime < 5) {
        document.body.style.backgroundColor = "#401F41";
-	   document.getElementById("MyClockDisplay").style.color = "#8464A5";
+	   document.getElementById("clockDisplay").style.color = "#8464A5";
 	   document.getElementById("morningclouds").style.display = "none";
 	   document.getElementById("dayclouds").style.display = "none";
 	   document.getElementById("eveningclouds").style.display = "none";
@@ -45,7 +55,7 @@ function backgroundColor() {
 	  //morning
 	  if (5 <= currentTime&&currentTime < 11) {
        document.body.style.backgroundColor = "#FFAB91";
-	   document.getElementById("MyClockDisplay").style.color = "#FF5D29";
+	   document.getElementById("clockDisplay").style.color = "#FF5D29";
 	   document.getElementById("dayclouds").style.display = "none";
 	   document.getElementById("eveningclouds").style.display = "none";
 	   document.getElementById("nightclouds").style.display = "none";
@@ -54,7 +64,7 @@ function backgroundColor() {
 	  //day
       if (11 <= currentTime&&currentTime < 17) {
        document.body.style.backgroundColor = "#FFED91";
-	   document.getElementById("MyClockDisplay").style.color = "#FFC329";
+	   document.getElementById("clockDisplay").style.color = "#FFC329";
 	    document.getElementById("morningclouds").style.display = "none";
 	    document.getElementById("eveningclouds").style.display = "none";
 	    document.getElementById("nightclouds").style.display = "none";
@@ -63,7 +73,7 @@ function backgroundColor() {
 	  //evening
       if (17 <= currentTime&&currentTime < 23) {
        document.body.style.backgroundColor = "#F75D2E";
-	   document.getElementById("MyClockDisplay").style.color = "#3C2856";
+	   document.getElementById("clockDisplay").style.color = "#3C2856";
 	   document.getElementById("morningclouds").style.display = "none";
 	   document.getElementById("dayclouds").style.display = "none";
 	   document.getElementById("nightclouds").style.display = "none";
@@ -72,7 +82,7 @@ function backgroundColor() {
 	  //night
       if (23 <= currentTime&&currentTime < 24) {
 	   document.body.style.backgroundColor = "#401F41";
-	   document.getElementById("MyClockDisplay").style.color = "#8464A5";
+	   document.getElementById("clockDisplay").style.color = "#8464A5";
 	   document.getElementById("morningclouds").style.display = "none";
 	   document.getElementById("dayclouds").style.display = "none";
 	   document.getElementById("eveningclouds").style.display = "none";

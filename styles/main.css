@@ -10,7 +10,7 @@ body{
   z-index: 1;
 }
 
-.flex-container {
+.flex-container{
 		/*center columns*/
 		display:flex;
 		align-items: center;
@@ -26,13 +26,23 @@ body{
 		font-family: do hyeon;
 		letter-spacing: 7px;
 		z-index: 10;
+		font-size: 30px;
 }
 
-@media screen and (min-width: 0px) {
-	.flex-container{
-		font-size: 30px;
-	}
-	
+#dateDisplay{
+		font-family: open sans;
+		letter-spacing:3px;
+		color: #3C2856;
+		
+		position: absolute;
+		top:57%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		
+		font-size: 10px;
+}
+
 	.bird {
 	display: none;
 	}
@@ -57,11 +67,14 @@ body{
 		height: 180px;
 	}
 
-}
-
 @media screen and (min-width: 360px) {
 	.flex-container{
-		font-size: 60px;
+		font-size: 55px;
+	}
+	
+	#dateDisplay{
+		font-size: 25px;
+		font-weight: 100;
 	}
 	
 	.bird {
@@ -80,6 +93,9 @@ body{
 		font-size: 75px;
 	}
 	
+	#dateDisplay{
+		font-size: 20px;
+	}
 	
 	#morningclouds{
 		background:url("../images/morning.png") 0 0 transparent;
@@ -108,6 +124,10 @@ body{
 @media screen and (min-width: 1366px) {
 	.flex-container{
 		font-size: 100px;
+	}
+	
+	#dateDisplay{
+		font-size: 25px;
 	}
 }
 }
