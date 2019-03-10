@@ -43,12 +43,17 @@ body{
 	}
 	
 	#morningclouds{
-		background:url("../../Challenge2/images/smallmorning.png") 0 0 transparent;
+		background:url("../images/smallmorning.png") 0 0 transparent;
 		height: 180px;
 	}
 
 	#dayclouds{
-		background:url("../../Challenge2/images/smallday.png") 0 0 transparent;
+		background:url("../images/smallday.png") 0 0 transparent;
+		height: 180px;
+	}
+	
+	#nightclouds{
+		background:url("../images/smallnight.png") 0 0 transparent;
 		height: 180px;
 	}
 }
@@ -66,12 +71,16 @@ body{
 	
 	
 	#morningclouds{
-		background:url("../../Challenge2/images/morning.png") 0 0 transparent;
+		background:url("../images/morning.png") 0 0 transparent;
 		height: 400px;
 	}
 	
 	#dayclouds{
-		background:url("../../Challenge2/images/day.png") 0 0 transparent;
+		background:url("../images/day.png") 0 0 transparent;
+		height: 400px;
+		
+	}#nightclouds{
+		background:url("../images/night.png") 0 0 transparent;
 		height: 400px;
 	}
 }

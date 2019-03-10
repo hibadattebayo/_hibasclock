@@ -2,7 +2,7 @@
 $(window).on("load", function() {
 
 var tl = new TimelineMax({repeat:-1});
-tl.to("#morningclouds, #dayclouds", 45, {x:0, backgroundPosition: "-4500px 0px", ease: Linear.easeNone});
+tl.to("#morningclouds, #dayclouds, #nightclouds", 45, {x:0, backgroundPosition: "-4500px 0px", ease: Linear.easeNone});
 
 var tl = new TimelineLite();
 //move happy the cat to the left (100% of the screen) and repeat this in an unending loop :)

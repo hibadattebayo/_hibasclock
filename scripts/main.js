@@ -35,7 +35,7 @@ function backgroundColor() {
       var currentTime = new Date().getHours();
 	  //if the current time is smaller than/equal to zero and if the current time is less than 5 then show the colorset for the night. 
       if (0 <= currentTime&&currentTime < 5) {
-       document.body.style.backgroundColor = "#260027";
+       document.body.style.backgroundColor = "#401F41";
 	   document.getElementById("MyClockDisplay").style.color = "#8464A5";
 	   document.getElementById("morningclouds").style.display = "none";
 	   document.getElementById("dayclouds").style.display = "none";
@@ -46,6 +46,7 @@ function backgroundColor() {
        document.body.style.backgroundColor = "#FFAB91";
 	   document.getElementById("MyClockDisplay").style.color = "#FF5D29";
 	   document.getElementById("dayclouds").style.display = "none";
+	   document.getElementById("nightclouds").style.display = "none";
       }
 	  
 	  //day
@@ -53,6 +54,7 @@ function backgroundColor() {
        document.body.style.backgroundColor = "#FFED91";
 	   document.getElementById("MyClockDisplay").style.color = "#FFC329";
 	    document.getElementById("morningclouds").style.display = "none";
+	    document.getElementById("nightclouds").style.display = "none";
       }
 	  
 	  //evening
@@ -61,11 +63,12 @@ function backgroundColor() {
 	   document.getElementById("MyClockDisplay").style.color = "#AE2A00";
 	   document.getElementById("morningclouds").style.display = "none";
 	   document.getElementById("dayclouds").style.display = "none";
+	   document.getElementById("nightclouds").style.display = "none";
       }
 	  
 	  //night
       if (currentTime = 24) {
-	   document.body.style.backgroundColor = "#260027";
+	   document.body.style.backgroundColor = "#401F41";
 	   document.getElementById("MyClockDisplay").style.color = "#8464A5";
 	   document.getElementById("morningclouds").style.display = "none";
 	   document.getElementById("dayclouds").style.display = "none";
