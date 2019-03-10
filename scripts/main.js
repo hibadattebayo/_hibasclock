@@ -52,7 +52,7 @@ function backgroundColor() {
       }
 	  
 	  //day
-      if (11 <= currentTime&&currentTime < 16) {
+      if (11 <= currentTime&&currentTime < 17) {
        document.body.style.backgroundColor = "#FFED91";
 	   document.getElementById("MyClockDisplay").style.color = "#FFC329";
 	    document.getElementById("morningclouds").style.display = "none";
@@ -61,7 +61,7 @@ function backgroundColor() {
       }
 	  
 	  //evening
-      if (16 <= currentTime&&currentTime < 23) {
+      if (17 <= currentTime&&currentTime < 23) {
        document.body.style.backgroundColor = "#F75D2E";
 	   document.getElementById("MyClockDisplay").style.color = "#3C2856";
 	   document.getElementById("morningclouds").style.display = "none";

@@ -10,15 +10,6 @@ body{
   z-index: 1;
 }
 
-.bird {
-  background:url('../images/happyfly.png');
- /*Cut the picture in half*/
-  width:168.5px;
-  height:190px;
-  position:absolute;
-  z-index: 2;
-}
-
 .flex-container {
 		/*center columns*/
 		display:flex;
@@ -36,10 +27,14 @@ body{
 		letter-spacing: 7px;
 		z-index: 10;
 }
-  
+
 @media screen and (min-width: 0px) {
 	.flex-container{
 		font-size: 30px;
+	}
+	
+	.bird {
+	display: none;
 	}
 	
 	#morningclouds{
@@ -66,8 +61,18 @@ body{
 
 @media screen and (min-width: 360px) {
 	.flex-container{
-		font-size: 50px;
+		font-size: 60px;
 	}
+	
+	.bird {
+	background:url('../images/happyfly.png');
+	/*Cut the picture in half*/
+	display: inline;
+	width:168.5px;
+	height:190px;
+	position:absolute;
+	z-index: 2;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -104,4 +109,5 @@ body{
 	.flex-container{
 		font-size: 100px;
 	}
+}
 }
