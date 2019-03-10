@@ -47,6 +47,7 @@ function backgroundColor() {
       if (0 <= currentTime&&currentTime < 5) {
        document.body.style.backgroundColor = "#401F41";
 	   document.getElementById("clockDisplay").style.color = "#8464A5";
+	   document.getElementById("dateDisplay").style.color = "#8464A5";
 	   document.getElementById("morningclouds").style.display = "none";
 	   document.getElementById("dayclouds").style.display = "none";
 	   document.getElementById("eveningclouds").style.display = "none";
@@ -56,6 +57,7 @@ function backgroundColor() {
 	  if (5 <= currentTime&&currentTime < 11) {
        document.body.style.backgroundColor = "#FFAB91";
 	   document.getElementById("clockDisplay").style.color = "#FF5D29";
+	   document.getElementById("dateDisplay").style.color = "#FF5D29";
 	   document.getElementById("dayclouds").style.display = "none";
 	   document.getElementById("eveningclouds").style.display = "none";
 	   document.getElementById("nightclouds").style.display = "none";
@@ -65,6 +67,7 @@ function backgroundColor() {
       if (11 <= currentTime&&currentTime < 17) {
        document.body.style.backgroundColor = "#FFED91";
 	   document.getElementById("clockDisplay").style.color = "#FFC329";
+	   document.getElementById("dateDisplay").style.color = "#FFC329";
 	    document.getElementById("morningclouds").style.display = "none";
 	    document.getElementById("eveningclouds").style.display = "none";
 	    document.getElementById("nightclouds").style.display = "none";
@@ -74,6 +77,7 @@ function backgroundColor() {
       if (17 <= currentTime&&currentTime < 23) {
        document.body.style.backgroundColor = "#F75D2E";
 	   document.getElementById("clockDisplay").style.color = "#3C2856";
+	   document.getElementById("dateDisplay").style.color = "#3C2856";
 	   document.getElementById("morningclouds").style.display = "none";
 	   document.getElementById("dayclouds").style.display = "none";
 	   document.getElementById("nightclouds").style.display = "none";
@@ -83,6 +87,7 @@ function backgroundColor() {
       if (23 <= currentTime&&currentTime < 24) {
 	   document.body.style.backgroundColor = "#401F41";
 	   document.getElementById("clockDisplay").style.color = "#8464A5";
+	   document.getElementById("dateDisplay").style.color = "#8464A5";
 	   document.getElementById("morningclouds").style.display = "none";
 	   document.getElementById("dayclouds").style.display = "none";
 	   document.getElementById("eveningclouds").style.display = "none";
