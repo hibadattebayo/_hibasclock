@@ -52,10 +52,16 @@ body{
 		height: 180px;
 	}
 	
+	#eveningclouds{
+		background:url("../images/smallevening.png") 0 0 transparent;
+		height: 180px;
+	}
+	
 	#nightclouds{
 		background:url("../images/smallnight.png") 0 0 transparent;
 		height: 180px;
 	}
+
 }
 
 @media screen and (min-width: 360px) {
@@ -79,10 +85,19 @@ body{
 		background:url("../images/day.png") 0 0 transparent;
 		height: 400px;
 		
-	}#nightclouds{
+	}
+	
+	#eveningclouds{
+		background:url("../images/evening.png") 0 0 transparent;
+		height: 400px;
+		
+	}
+	
+	#nightclouds{
 		background:url("../images/night.png") 0 0 transparent;
 		height: 400px;
 	}
+	
 }
 
 @media screen and (min-width: 1366px) {

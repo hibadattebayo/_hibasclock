@@ -29,7 +29,7 @@ function showTime(){
 
 showTime();
 
-//change stylesheet according to the time
+//change colorsets according to the time of the day
 function backgroundColor() {
 	var background = document.getElementsByTagName('body')[0];
       var currentTime = new Date().getHours();
@@ -39,39 +39,43 @@ function backgroundColor() {
 	   document.getElementById("MyClockDisplay").style.color = "#8464A5";
 	   document.getElementById("morningclouds").style.display = "none";
 	   document.getElementById("dayclouds").style.display = "none";
+	   document.getElementById("eveningclouds").style.display = "none";
       }
 	  
 	  //morning
-	  if (5 <= currentTime&&currentTime <= 24) {
+	  if (5 <= currentTime&&currentTime < 11) {
        document.body.style.backgroundColor = "#FFAB91";
 	   document.getElementById("MyClockDisplay").style.color = "#FF5D29";
 	   document.getElementById("dayclouds").style.display = "none";
+	   document.getElementById("eveningclouds").style.display = "none";
 	   document.getElementById("nightclouds").style.display = "none";
       }
 	  
 	  //day
-      if (11 <= currentTime&&currentTime < 17) {
+      if (11 <= currentTime&&currentTime < 16) {
        document.body.style.backgroundColor = "#FFED91";
 	   document.getElementById("MyClockDisplay").style.color = "#FFC329";
 	    document.getElementById("morningclouds").style.display = "none";
+	    document.getElementById("eveningclouds").style.display = "none";
 	    document.getElementById("nightclouds").style.display = "none";
       }
 	  
 	  //evening
-      if (17 <= currentTime&&currentTime < 24) {
-       document.body.style.backgroundColor = "#FF551F";
-	   document.getElementById("MyClockDisplay").style.color = "#AE2A00";
+      if (16 <= currentTime&&currentTime < 23) {
+       document.body.style.backgroundColor = "#F75D2E";
+	   document.getElementById("MyClockDisplay").style.color = "#3C2856";
 	   document.getElementById("morningclouds").style.display = "none";
 	   document.getElementById("dayclouds").style.display = "none";
 	   document.getElementById("nightclouds").style.display = "none";
       }
 	  
 	  //night
-      if (currentTime = 24) {
+      if (23 <= currentTime&&currentTime < 24) {
 	   document.body.style.backgroundColor = "#401F41";
 	   document.getElementById("MyClockDisplay").style.color = "#8464A5";
 	   document.getElementById("morningclouds").style.display = "none";
 	   document.getElementById("dayclouds").style.display = "none";
+	   document.getElementById("eveningclouds").style.display = "none";
       }
 }
 
